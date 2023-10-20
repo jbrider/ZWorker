@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  zworker:
+    image: ${DOCKER_REGISTRY-}zworker
+    build:
+      context: .
+      dockerfile: ZWorker/Dockerfile
+    networks:
+      - z-network
+
+networks:
+  z-network:
+    name: custom_znetwork
+    

@@ -1,0 +1,6 @@
+@ZWorker_HostAddress = http://localhost:5216
+
+GET {{ZWorker_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
